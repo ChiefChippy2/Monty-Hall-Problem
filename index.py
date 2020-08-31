@@ -23,7 +23,7 @@ for i in range(100):
     tun+=1
   else:
     tys+=1
-  if(result[1]!=2):
+  if(result[1]!=1):
     continue
   if(result[0]):
     unswap+=1
