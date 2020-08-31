@@ -6,7 +6,7 @@ def start():
     choice,door=swap(choice,door)
   if(random.randint(0,1)==0):
     choice,leftover=swap(leftover,choice)
-  print("Choice is -> "+doors[choice])
+  print("Choice is -> "+str(doors[choice]))
 def swap(x,y):
   return [y,x]
 start()
