@@ -7,7 +7,7 @@ def start():
   print("You chose door #"+str(choice)+", host opened door #"+str(door))
   if(random.randint(0,1)==0):
     print("Swapped")
-    choice,leftover=swap(leftover,choice)
+    choice,leftover=swap(choice,leftover)
   print("Choice is -> "+str(doors[choice]))
 def swap(x,y):
   return [y,x]
