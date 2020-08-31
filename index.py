@@ -28,4 +28,4 @@ for i in range(10):
     unswap+=1
   else:
     yswap+=1
-print("Times that contestant won without swapping : "+str(unswap/tun)", and times that contestant won with swapping "+str(yswap/tys))
+print("Times that contestant won without swapping : "+str(unswap/tun)+", and times that contestant won with swapping "+str(yswap/tys))
