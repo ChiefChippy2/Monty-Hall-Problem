@@ -15,14 +15,17 @@ def start():
   return [isSwap,doors[choice]]
 def swap(x,y):
   return [y,x]
-unswap=0
-swap=0
+tys,tun,unswap,yswap=0,0,0,0
 for i in range(10):
   result=start()
+  if(result[0]):
+    tun+=1
+  else:
+    tys+=1
   if(result[1]!=2):
     continue
   if(result[0]):
     unswap+=1
   else:
-    swap+=1
-  
+    yswap+=1
+print("Times that contestant won without swapping : "+str(unswap/tun)", and times that contestant won with swapping "+str(yswap/tys))
