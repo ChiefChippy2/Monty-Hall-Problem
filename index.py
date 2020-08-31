@@ -2,6 +2,7 @@ import random
 true=True
 false=False
 def start():
+  isSwap=false;
   doors=[0,0,1] 
   choice,door,leftover=random.sample([0,1,2],3)
   if(door==2):
@@ -16,7 +17,7 @@ def start():
 def swap(x,y):
   return [y,x]
 tys,tun,unswap,yswap=0,0,0,0
-for i in range(10):
+for i in range(100):
   result=start()
   if(result[0]):
     tun+=1
