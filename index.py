@@ -30,3 +30,4 @@ for i in range(100):
   else:
     yswap+=1
 print("Times that contestant won without swapping : "+str(unswap/tun)+", and times that contestant won with swapping "+str(yswap/tys))
+print("Swap/Unswap ratio : "+str(tys)+":"+str(tun))
